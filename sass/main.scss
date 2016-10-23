@@ -12,7 +12,7 @@ Arial,
 sans-serif,
 "Apple Color Emoji",
 "Segoe UI Emoji",
-"Segoe UI Symbol"; 
+"Segoe UI Symbol";
 // Sass imports
 // Sass mixins
 @mixin border-box {
@@ -94,7 +94,7 @@ html {
 
 .profile-picture-main {
     max-height: 233px;
-    width: 100%;
+    width: 233px;
     border-radius: 6px;
     margin-bottom: 8px;
 }
@@ -109,7 +109,7 @@ html {
 // profile info
 .left-container {
     float: left;
-    width: 26%;
+    width: 24%;
     margin-right: 20px;
     margin-bottom: 30px;
     overflow: hidden;
@@ -193,10 +193,40 @@ html {
 // repo info
 .main-container {
     float: right;
-    width: 70%;
+    width: 73%;
     margin-bottom: 30px;
     .nav {
         margin-bottom: 13px;
+    }
+    .repo-listing-container {
+        width: 100%;
+        border-bottom: 1px solid #d5d5d5;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        a {
+            color: #4078c0;
+            text-decoration: none;
+        }
+        img {
+        		margin-right: 5px;
+        }
+        .repos-name {
+            display: inline-block;
+        }
+        .repos-language {
+            display: inline-block;
+            margin-left: 65%;
+        }
+        .repos-stars-count {
+            display: inline-block;
+            float: right;
+            margin-left: 5px;
+        }
+        .repos-forks-count {
+            display: inline-block;
+            float: right;
+            margin-left: 5px;
+        }
     }
 }
 

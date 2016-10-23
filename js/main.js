@@ -22,7 +22,7 @@ $.ajax({
             ${result.location}
             `)
         $('#blog').append(`
-            <a href="https://medium.com/@johncpatterson">${result.blog}</a>
+            <a href="https://medium.com/@johncpatterson">${result.blog}</a>...
             `)
         $('#joined').append(`
             ${result.created_at}
@@ -47,10 +47,13 @@ $.ajax({
         console.log(data);
         var arrayOfRepos = data.forEach(function(repos) {
             $('#repository-data-goes-here').html(`
-            
-            ${repos.description}
-            ${repos.full_name}
-            ${repos.language}
+            <div class="repo-listing-container">
+                <div class="repos-name">${repos.name}</div>
+                <div class="repos-language">${repos.language}</div>
+                <div class="repos-stars-count"><img src="img/star.svg" class="star">${repos.stargazers_count}</div>
+                <div class="repos-forks-count"><img src="img/git-branch.svg" class="git-branch">${repos.forks}</div>
+                <div class="updated-at">Updated ${repos.updated_at}</div>
+            </div>
             `)
         })
     }

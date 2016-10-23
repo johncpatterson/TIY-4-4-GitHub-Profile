@@ -59,7 +59,7 @@ html {
 
 .profile-picture-main {
   max-height: 233px;
-  width: 100%;
+  width: 233px;
   border-radius: 6px;
   margin-bottom: 8px; }
 
@@ -71,7 +71,7 @@ html {
 
 .left-container {
   float: left;
-  width: 26%;
+  width: 24%;
   margin-right: 20px;
   margin-bottom: 30px;
   overflow: hidden; }
@@ -138,10 +138,33 @@ html {
 
 .main-container {
   float: right;
-  width: 70%;
+  width: 73%;
   margin-bottom: 30px; }
   .main-container .nav {
     margin-bottom: 13px; }
+  .main-container .repo-listing-container {
+    width: 100%;
+    border-bottom: 1px solid #d5d5d5;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .main-container .repo-listing-container a {
+      color: #4078c0;
+      text-decoration: none; }
+    .main-container .repo-listing-container img {
+      margin-right: 5px; }
+    .main-container .repo-listing-container .repos-name {
+      display: inline-block; }
+    .main-container .repo-listing-container .repos-language {
+      display: inline-block;
+      margin-left: 65%; }
+    .main-container .repo-listing-container .repos-stars-count {
+      display: inline-block;
+      float: right;
+      margin-left: 5px; }
+    .main-container .repo-listing-container .repos-forks-count {
+      display: inline-block;
+      float: right;
+      margin-left: 5px; }
 
 .footer {
   clear: both;
