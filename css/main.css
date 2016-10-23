@@ -1,0 +1,164 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5; }
+
+.form-control {
+  max-width: 35%;
+  display: inline; }
+
+.header-container {
+  width: 100%;
+  background-color: #F5F5F5;
+  padding-top: 5px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e5e5; }
+
+.header {
+  background-color: #F5F5F5;
+  width: 990px;
+  margin-right: auto;
+  margin-left: auto; }
+  .header .github-logo-header {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+    margin-top: -7px; }
+  .header input {
+    font-size: 13px; }
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .header li {
+    display: inline;
+    margin: 0;
+    padding: 5px; }
+  .header .nav-links-left {
+    display: inline-block;
+    font-weight: bold; }
+  .header .nav-link-right {
+    float: right;
+    padding-top: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold; }
+
+.profile-picture-small {
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  margin-right: -10px; }
+
+.profile-picture-main {
+  max-height: 233px;
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 8px; }
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 25px; }
+
+.left-container {
+  float: left;
+  width: 26%;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  overflow: hidden; }
+  .left-container i {
+    margin-right: 5px; }
+  .left-container img {
+    margin-right: 5px; }
+  .left-container #name {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 600; }
+  .left-container #user-name {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    color: #666; }
+  .left-container #bio {
+    margin-bottom: 12px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #767676; }
+  .left-container #company {
+    padding: 3px; }
+  .left-container #location {
+    padding: 3px; }
+  .left-container #blog {
+    padding: 3px;
+    white-space: nowrap; }
+    .left-container #blog img {
+      margin-right: 4px; }
+  .left-container #joined {
+    padding: 3px;
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 15px; }
+  .left-container .followers-starred-following {
+    border-bottom: 1px solid #d5d5d5;
+    padding: 10px;
+    color: #767676;
+    font-size: 15px; }
+    .left-container .followers-starred-following div {
+      display: inline-block;
+      width: 32%;
+      text-align: center; }
+  .left-container #organizations {
+    margin-top: 10px; }
+    .left-container #organizations img {
+      display: inline-block;
+      overflow: hidden;
+      line-height: 1;
+      vertical-align: middle;
+      border-radius: 3px;
+      height: 35px;
+      width: 35px; }
+    .left-container #organizations .organizations-header {
+      margin-bottom: 5px;
+      font-size: 18px;
+      font-weight: 600; }
+
+.main-container {
+  float: right;
+  width: 70%;
+  margin-bottom: 30px; }
+  .main-container .nav {
+    margin-bottom: 13px; }
+
+.footer {
+  clear: both;
+  border-top: 1px solid #eee;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px; }
+  .footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block; }
+  .footer li {
+    display: inline;
+    margin: 0;
+    padding: 5px; }
+  .footer .footer-links-right {
+    float: right; }
+  .footer .github-logo-footer {
+    display: inline; }
