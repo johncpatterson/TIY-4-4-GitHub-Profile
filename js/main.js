@@ -66,7 +66,7 @@ $.ajax({
         var arrayOfEvents = result.forEach(function(events) {
             // var commitKey = events.payload.head;
             // console.log(commitKey);
-            // var commitKeyLast5 = commitKey.slice(-7);
+            // var commitKeyLast5 = commitKey.slice(-7);     <------ this was my attempt to limit the character count of the commit string
             $('#event-data-goes-here').append(`
             <div class="events-listing-container">
                 <div class=""><img src="img/git-commit.svg" class="git-commit-logo">${events.created_at}</div>
@@ -81,17 +81,6 @@ $.ajax({
 
 
 
-
-//     $.ajax({
-//     url: 'https://api.github.com/users/johncpatterson/events',
-//     success: function(result) {
-//         console.log(result);
-//         $('#event-data-goes-here').append(`
-//         ${result.name}
-//     `)
-
-//     }
-// })
 
 
 
