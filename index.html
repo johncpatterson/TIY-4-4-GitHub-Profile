@@ -14,13 +14,13 @@
 <body>
     <div class="header-container">
         <div class="header">
-            <img src="img/mark-github.svg" class="github-logo-header">
+            <a href="http://github.com"><i class="fa fa-github" aria-hidden="true"></i></a>
             <input type="text" class="form-control" placeholder="Search GitHub" aria-describedby="basic-addon1">
             <ul class="nav-links-left">
-                <li>Explore</li>
-                <li>Gist</li>
-                <li>Blog</li>
-                <li>Help</li>
+                <li><a href="https://github.com/explore">Explore</a></li>
+                <li><a href="https://gist.github.com/">Gist</a></li>
+                <li><a href="https://github.com/blog">Blog</a></li>
+                <li><a href="https://help.github.com/">Help</a></li>
             </ul>
             <ul class="nav-link-right">
                 <li><img src="img/profile-pic-small.jpeg" class="profile-picture-small"></li>
@@ -55,16 +55,28 @@
             </div>
         </div>
         <div class="main-container">
-            <ul class="nav nav-tabs">
-                <li role="presentation"><a href="#">Contributions</a></li>
-                <li role="presentation"><a href="#">Repositories</a></li>
-                <li role="presentation"><a href="#">Public Activity</a></li>
+            <ul class="nav nav-tabs"><button class="btn edit-profile-button pull-right">Edit Profile</button>
+                <li><a data-toggle="tab" href="#contributions">Contributions</a></li>
+                <li class="active"><a data-toggle="tab" href="#repositories">Repositories</a></li>
+                <li><a data-toggle="tab" href="#public-activity">Public Activity</a></li>
             </ul>
-            <div class="edit-profile-button"><img src=""></div>
-            <div id="repository-data-goes-here">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, accusantium quia consectetur eligendi a. Assumenda veniam pariatur, voluptatibus unde voluptas expedita repellat deleniti iure, officiis, obcaecati esse deserunt nostrum nisi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ab labore impedit accusamus eum ipsum quod dolores natus, quasi sequi laudantium possimus nulla est minus minima et, perspiciatis porro optio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum tempora architecto sit doloremque laudantium quam possimus, dicta porro ad, culpa consectetur voluptas atque, id dignissimos. Sapiente laboriosam accusamus autem. Vero!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium, consequuntur pariatur saepe laudantium. Itaque praesentium hic, mollitia, voluptas eum dolorum minus nam aspernatur provident modi dicta deleniti. Maiores, vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ipsam dolor reiciendis impedit, aperiam deleniti neque inventore nobis, nihil omnis assumenda eos rerum! Pariatur culpa consectetur voluptas unde, assumenda maiores.</p>
-            </div>
-            <div id="event-data-goes-here">
+            <div class="tab-content">
+                <div id="contributions" class="tab-pane fade">
+                    <h3>Contributions</h3>
+                    <p>You don't have any contributions yet.</p>
+                </div>
+
+                <div id="repositories" class="tab-pane fade in active">
+                    
+                    <div id="repository-data-goes-here">
+                        <!-- Append repo data here -->
+                    </div>
+                </div>
+                <div id="public-activity" class="tab-pane fade">
+                    <div id="event-data-goes-here">
+                        <!-- Apend event data here -->
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer">
@@ -87,6 +99,7 @@
             </ul>
         </div>
     </div>
+    <!-- </div> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.js"></script>

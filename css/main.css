@@ -18,7 +18,7 @@ html {
   width: 100%;
   background-color: #F5F5F5;
   padding-top: 5px;
-  padding-bottom: 12px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #e5e5e5; }
 
 .header {
@@ -26,11 +26,13 @@ html {
   width: 990px;
   margin-right: auto;
   margin-left: auto; }
-  .header .github-logo-header {
-    width: 28px;
-    height: 28px;
+  .header i.fa-github {
+    font-size: 35px;
     margin-right: 8px;
-    margin-top: -7px; }
+    margin-top: 0px;
+    vertical-align: middle; }
+    .header i.fa-github i.fa-github:hover {
+      color: #4078c0; }
   .header input {
     font-size: 13px; }
   .header ul {
@@ -40,16 +42,24 @@ html {
   .header li {
     display: inline;
     margin: 0;
-    padding: 5px; }
+    padding: 7px; }
+  .header a {
+    color: black; }
+  .header a:hover {
+    color: #4078c0;
+    text-decoration: none; }
   .header .nav-links-left {
     display: inline-block;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 13px; }
   .header .nav-link-right {
     float: right;
     padding-top: 6px;
     padding-left: 5px;
     padding-right: 5px;
-    font-weight: bold; }
+    margin-right: -17px;
+    font-weight: bold;
+    font-size: 14px; }
 
 .profile-picture-small {
   height: 20px;
@@ -64,7 +74,7 @@ html {
   margin-bottom: 8px; }
 
 .wrapper {
-  width: 1000px;
+  width: 990px;
   margin: 0 auto;
   background-color: white;
   margin-top: 25px; }
@@ -143,20 +153,25 @@ html {
   .main-container .nav {
     margin-bottom: 13px; }
   .main-container .repo-listing-container {
-    width: 100%;
     border-bottom: 1px solid #d5d5d5;
-    padding-top: 15px;
-    padding-bottom: 15px; }
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #767676; }
     .main-container .repo-listing-container a {
       color: #4078c0;
-      text-decoration: none; }
+      text-decoration: none;
+      font-weight: 600; }
+    .main-container .repo-listing-container a:hover {
+      text-decoration: underline; }
     .main-container .repo-listing-container img {
       margin-right: 5px; }
     .main-container .repo-listing-container .repos-name {
-      display: inline-block; }
+      display: inline-block;
+      font-size: 18px; }
     .main-container .repo-listing-container .repos-language {
       display: inline-block;
-      margin-left: 65%; }
+      float: right;
+      margin-right: 10px; }
     .main-container .repo-listing-container .repos-stars-count {
       display: inline-block;
       float: right;
@@ -165,13 +180,43 @@ html {
       display: inline-block;
       float: right;
       margin-left: 5px; }
+    .main-container .repo-listing-container .updated-at {
+      font-size: 14px;
+      margin-top: 10px; }
+  .main-container .git-commit-logo {
+    display: inline-block; }
+  .main-container .events-listing-container {
+    border-bottom: 1px solid #d5d5d5;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .main-container .events-listing-container .git-commit-logo {
+      height: 35px;
+      width: 35px;
+      margin-right: 8px; }
+    .main-container .events-listing-container .pushed-to {
+      font-weight: bold;
+      font-size: 15px; }
+    .main-container .events-listing-container .profile-pic-and-commit {
+      padding-top: 5px; }
+    .main-container .events-listing-container img.events-profile-pic-large {
+      width: 31px;
+      height: 31px;
+      margin-right: 9px;
+      border-radius: 3px; }
+    .main-container .events-listing-container img.events-profile-pic-small {
+      width: 15px;
+      height: 15px;
+      margin-top: -9px;
+      margin-right: 4px;
+      border-radius: 3px; }
 
 .footer {
   clear: both;
   border-top: 1px solid #eee;
   padding-top: 40px;
   padding-bottom: 40px;
-  margin-top: 40px; }
+  margin-top: 40px;
+  font-size: 12px; }
   .footer ul {
     margin: 0;
     padding: 0;
@@ -181,7 +226,12 @@ html {
     display: inline;
     margin: 0;
     padding: 5px; }
+  .footer a:hover {
+    color: #4078c0; }
   .footer .footer-links-right {
     float: right; }
   .footer .github-logo-footer {
-    display: inline; }
+    display: inline;
+    margin-left: 92px;
+    width: 24px;
+    height: 24px; }

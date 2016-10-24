@@ -44,7 +44,7 @@ html {
     width: 100%;
     background-color: #F5F5F5;
     padding-top: 5px;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -53,11 +53,14 @@ html {
     width: 990px;
     margin-right: auto;
     margin-left: auto;
-    .github-logo-header {
-        width: 28px;
-        height: 28px;
+    i.fa-github {
+        font-size: 35px;
         margin-right: 8px;
-        margin-top: -7px;
+        margin-top: 0px;
+        vertical-align: middle;
+        i.fa-github:hover {
+            color: #4078c0;
+        }
     }
     input {
         font-size: 13px;
@@ -70,18 +73,28 @@ html {
     li {
         display: inline;
         margin: 0;
-        padding: 5px;
+        padding: 7px;
+    }
+    a {
+        color: $font-color;
+    }
+    a:hover {
+        color: #4078c0;
+        text-decoration: none;
     }
     .nav-links-left {
         display: inline-block;
         font-weight: bold;
+        font-size: 13px;
     }
     .nav-link-right {
         float: right;
         padding-top: 6px;
         padding-left: 5px;
         padding-right: 5px;
+        margin-right: -17px;
         font-weight: bold;
+        font-size: 14px;
     }
 }
 
@@ -100,7 +113,7 @@ html {
 }
 
 .wrapper {
-    width: 1000px;
+    width: 990px;
     margin: 0 auto;
     background-color: $primary-color-1;
     margin-top: 25px;
@@ -198,24 +211,33 @@ html {
     .nav {
         margin-bottom: 13px;
     }
+    .edit-profile-button {
+    
+    }
     .repo-listing-container {
-        width: 100%;
         border-bottom: 1px solid #d5d5d5;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: $font-color-2;
         a {
             color: #4078c0;
             text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+        		text-decoration: underline;
         }
         img {
-        		margin-right: 5px;
+            margin-right: 5px;
         }
         .repos-name {
             display: inline-block;
+            font-size: 18px;
         }
         .repos-language {
             display: inline-block;
-            margin-left: 65%;
+            float: right;
+            margin-right: 10px;
         }
         .repos-stars-count {
             display: inline-block;
@@ -227,6 +249,43 @@ html {
             float: right;
             margin-left: 5px;
         }
+        .updated-at {
+        	font-size: 14px;
+        	margin-top: 10px;
+        }
+    }
+    .git-commit-logo {
+        display: inline-block;
+    }
+    .events-listing-container {
+        border-bottom: 1px solid #d5d5d5;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .git-commit-logo {
+        	height: 35px;
+        	width: 35px;
+        	margin-right: 8px; 
+        }
+        .pushed-to {
+        	font-weight: bold;
+        	font-size: 15px;
+        }
+        .profile-pic-and-commit {
+        	padding-top: 5px;
+        }
+        img.events-profile-pic-large {
+            width: 31px;
+            height: 31px;
+            margin-right: 9px;
+            border-radius: 3px;
+        }
+        img.events-profile-pic-small {
+            width: 15px;
+            height: 15px;
+            margin-top: -9px;
+            margin-right: 4px;
+            border-radius: 3px;
+        }
     }
 }
 
@@ -237,6 +296,7 @@ html {
     padding-top: 40px;
     padding-bottom: 40px;
     margin-top: 40px;
+    font-size: 12px;
     ul {
         margin: 0;
         padding: 0;
@@ -248,10 +308,16 @@ html {
         margin: 0;
         padding: 5px;
     }
+    a:hover {
+        color: #4078c0;
+    }
     .footer-links-right {
         float: right;
     }
     .github-logo-footer {
         display: inline;
+        margin-left: 92px;
+        width: 24px;
+        height: 24px;
     }
 }
