@@ -152,6 +152,8 @@ html {
   margin-bottom: 30px; }
   .main-container .nav {
     margin-bottom: 13px; }
+  .main-container a.github-button {
+    float: right; }
   .main-container .repo-listing-container {
     border-bottom: 1px solid #d5d5d5;
     padding-top: 20px;
