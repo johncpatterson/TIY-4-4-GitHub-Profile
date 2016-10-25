@@ -176,8 +176,16 @@ html {
     .followers-starred-following {
         border-bottom: 1px solid #d5d5d5;
         padding: 10px;
+        padding-top: 8px;
         color: $font-color-2;
         font-size: 15px;
+        .followers,
+        .following,
+        .starred {
+            font-size: 40px;
+            font-weight: 700;
+            color: #4078c0;
+        }
         div {
             display: inline-block;
             width: 32%;
@@ -213,7 +221,6 @@ html {
     }
     button.nav-top-search {
         float: right;
-        margin-right: 4px;
         position: relative;
         display: inline-block;
         padding: 6px 12px;
@@ -287,9 +294,16 @@ html {
     border-bottom: 1px solid #d5d5d5;
     padding-bottom: 10px;
     button.repo-search-tab-button-right {
-            margin-left: 17px;
-            float: right;
-        margin-right: 4px;
+        float: right;
+        color: #fff;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+        background-color: #60b044;
+        background-image: -webkit-linear-gradient(#8add6d, #60b044);
+        background-image: linear-gradient(#8add6d, #60b044);
+        border-color: #5ca941;
+    }
+    button.repo-search-tab-button-left {
+        margin-top: -2px;
         position: relative;
         display: inline-block;
         padding: 6px 12px;
@@ -311,32 +325,10 @@ html {
         border-radius: 3px;
         -webkit-appearance: none;
         -moz-appearance: none;
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        }
+    }
     .repo-search-tab-links {
-        
         display: inline-block;
+        margin-left: 10px;
         a {
             color: #4078c0;
             text-decoration: none;

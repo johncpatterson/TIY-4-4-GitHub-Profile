@@ -1,7 +1,3 @@
-// jQuery(function() {
-
-
-
 $.ajax({
     url: 'https://api.github.com/users/johncpatterson',
     success: function successHandler(result) {
@@ -28,16 +24,14 @@ $.ajax({
             ${moment(result.created_at).format("MMMM Do YYYY")}
             `)
         $('#followers').prepend(`
-            ${result.followers} <br>
+            <span class="followers">${result.followers}</span> <br>
             `)
         $('#starred').prepend(`
-            ${result.public_repos} <br>
+            <span class="starred">${result.public_repos}</span> <br>
             `)
         $('#following').prepend(`
-            ${result.following} <br>
+            <span class="following">${result.following}</span> <br>
             `)
-
-
     }
 })
 
@@ -46,7 +40,7 @@ $.ajax({
     success: function(data) {
         console.log(data);
         var arrayOfRepos = data.forEach(function(repos) {
-           $('#repository-data-goes-here').append(`
+            $('#repository-data-goes-here').append(`
             <div class="repo-listing-container">
                 <div class="repos-name"><a href="#">${repos.name}</a></div>
                 <div class="repos-forks-count"><img src="img/git-branch.svg" class="git-branch">${repos.forks}</div>
@@ -55,9 +49,6 @@ $.ajax({
                 <div class="updated-at">Updated ${moment(repos.updated_at).fromNow()}</div>
             </div>
             `)
-
-
-
         })
     }
 })
@@ -67,32 +58,22 @@ $.ajax({
     success: function(result) {
         console.log(result);
         var arrayOfEvents = result.forEach(function(events) {
-
-
-
-            if(events.type === "PushEvent") {
-            var commitKey = events.payload.head;
-            console.log(commitKey);
-            var commitKeyLast5 = commitKey.substr(0,7);   
-            $('#event-data-goes-here').append(`
+            // var string = events.payload.ref;
+            // var array = string.split('/');
+            // var repoName = array[2];
+            // console.log(repoName);
+            if (events.type === "PushEvent") {
+                var commitKey = events.payload.head;
+                var commitKeyLast7 = commitKey.substr(0, 7);
+                console.log(commitKeyLast7);
+                $('#event-data-goes-here').append(`
             <div class="events-listing-container">
                 <div class=""><img src="img/git-commit.svg" class="git-commit-logo">${moment(events.created_at).fromNow()}</div>
-                <div class="pushed-to"><a href="https://github.com/johncpatterson">${events.actor.login}</a> pushed to ${events.payload.ref} at ${events.repo.name}</div>
-                <div class="profile-pic-and-commit"><img src="${events.actor.avatar_url}" class="events-profile-pic-large"><img src="${events.actor.avatar_url}" class="events-profile-pic-small">${commitKeyLast5}</div>
+                <div class="pushed-to"><a href="https://github.com/johncpatterson">${events.actor.login}</a> pushed to ${events.payload.ref} at <a href="https://github.com/johncpatterson/">${events.repo.name}</a></div>
+                <div class="profile-pic-and-commit"><img src="${events.actor.avatar_url}" class="events-profile-pic-large"><img src="${events.actor.avatar_url}" class="events-profile-pic-small">${commitKeyLast7}</div>
             </div>
             `)
             }
         })
     }
 })
-
-
-
-
-
-
-
-
-
-// end of jQuery function tag:
-// });

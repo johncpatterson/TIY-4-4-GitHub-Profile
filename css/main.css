@@ -125,8 +125,15 @@ html {
   .left-container .followers-starred-following {
     border-bottom: 1px solid #d5d5d5;
     padding: 10px;
+    padding-top: 8px;
     color: #767676;
     font-size: 15px; }
+    .left-container .followers-starred-following .followers,
+    .left-container .followers-starred-following .following,
+    .left-container .followers-starred-following .starred {
+      font-size: 40px;
+      font-weight: 700;
+      color: #4078c0; }
     .left-container .followers-starred-following div {
       display: inline-block;
       width: 32%;
@@ -154,7 +161,6 @@ html {
     margin-bottom: 13px; }
   .main-container button.nav-top-search {
     float: right;
-    margin-right: 4px;
     position: relative;
     display: inline-block;
     padding: 6px 12px;
@@ -216,9 +222,15 @@ html {
   border-bottom: 1px solid #d5d5d5;
   padding-bottom: 10px; }
   .repo-search-tab button.repo-search-tab-button-right {
-    margin-left: 17px;
     float: right;
-    margin-right: 4px;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+    background-color: #60b044;
+    background-image: -webkit-linear-gradient(#8add6d, #60b044);
+    background-image: linear-gradient(#8add6d, #60b044);
+    border-color: #5ca941; }
+  .repo-search-tab button.repo-search-tab-button-left {
+    margin-top: -2px;
     position: relative;
     display: inline-block;
     padding: 6px 12px;
@@ -241,7 +253,8 @@ html {
     -webkit-appearance: none;
     -moz-appearance: none; }
   .repo-search-tab .repo-search-tab-links {
-    display: inline-block; }
+    display: inline-block;
+    margin-left: 10px; }
     .repo-search-tab .repo-search-tab-links a {
       color: #4078c0;
       text-decoration: none;
