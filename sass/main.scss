@@ -211,81 +211,182 @@ html {
     .nav {
         margin-bottom: 13px;
     }
-    a.github-button {
+    button.nav-top-search {
         float: right;
+        margin-right: 4px;
+        position: relative;
+        display: inline-block;
+        padding: 6px 12px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #333;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: #eee;
+        background-image: -webkit-linear-gradient(#fcfcfc, #eee);
+        background-image: linear-gradient(#fcfcfc, #eee);
+        border: 1px solid #d5d5d5;
+        border-radius: 3px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
     }
-    .repo-listing-container {
-        border-bottom: 1px solid #d5d5d5;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: $font-color-2;
+}
+
+.repo-listing-container {
+    border-bottom: 1px solid #d5d5d5;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: $font-color-2;
+    a {
+        color: #4078c0;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    img {
+        margin-right: 5px;
+    }
+    .repos-name {
+        display: inline-block;
+        font-size: 18px;
+    }
+    .repos-language {
+        display: inline-block;
+        float: right;
+        margin-right: 10px;
+    }
+    .repos-stars-count {
+        display: inline-block;
+        float: right;
+        margin-left: 5px;
+    }
+    .repos-forks-count {
+        display: inline-block;
+        float: right;
+        margin-left: 5px;
+    }
+    .updated-at {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+.git-commit-logo {
+    display: inline-block;
+}
+
+.repo-search-tab {
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 10px;
+    button.repo-search-tab-button-right {
+            margin-left: 17px;
+            float: right;
+        margin-right: 4px;
+        position: relative;
+        display: inline-block;
+        padding: 6px 12px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #333;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: #eee;
+        background-image: -webkit-linear-gradient(#fcfcfc, #eee);
+        background-image: linear-gradient(#fcfcfc, #eee);
+        border: 1px solid #d5d5d5;
+        border-radius: 3px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+    .repo-search-tab-links {
+        
+        display: inline-block;
         a {
             color: #4078c0;
             text-decoration: none;
-            font-weight: 600;
+            font-size: 14px;
         }
         a:hover {
             text-decoration: underline;
         }
-        img {
-            margin-right: 5px;
-        }
-        .repos-name {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
             display: inline-block;
-            font-size: 18px;
         }
-        .repos-language {
-            display: inline-block;
-            float: right;
-            margin-right: 10px;
-        }
-        .repos-stars-count {
-            display: inline-block;
-            float: right;
-            margin-left: 5px;
-        }
-        .repos-forks-count {
-            display: inline-block;
-            float: right;
-            margin-left: 5px;
-        }
-        .updated-at {
-            font-size: 14px;
-            margin-top: 10px;
+        li {
+            display: inline;
+            margin: 0;
+            padding: 3px;
         }
     }
+}
+
+.events-listing-container {
+    border-bottom: 1px solid #d5d5d5;
+    padding-top: 15px;
+    padding-bottom: 15px;
     .git-commit-logo {
-        display: inline-block;
+        height: 35px;
+        width: 35px;
+        margin-right: 8px;
     }
-    .events-listing-container {
-        border-bottom: 1px solid #d5d5d5;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        .git-commit-logo {
-            height: 35px;
-            width: 35px;
-            margin-right: 8px;
-        }
-        .pushed-to {
-            font-weight: bold;
-            font-size: 15px;
-        }
-        .profile-pic-and-commit {
-            padding-top: 5px;
-        }
-        img.events-profile-pic-large {
-            width: 31px;
-            height: 31px;
-            margin-right: 9px;
-            border-radius: 3px;
-        }
-        img.events-profile-pic-small {
-            width: 15px;
-            height: 15px;
-            margin-top: -9px;
-            margin-right: 4px;
-            border-radius: 3px;
-        }
+    .pushed-to {
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .profile-pic-and-commit {
+        padding-top: 5px;
+    }
+    img.events-profile-pic-large {
+        width: 31px;
+        height: 31px;
+        margin-right: 9px;
+        border-radius: 3px;
+    }
+    img.events-profile-pic-small {
+        width: 15px;
+        height: 15px;
+        margin-top: -9px;
+        margin-right: 4px;
+        border-radius: 3px;
     }
 }
 

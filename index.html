@@ -40,7 +40,7 @@
             <div id="company"><i class="fa fa-users" aria-hidden="true"></i>Totally Rad Devs Inc.</div>
             <div id="location"><img src="img/location.svg" class=""></div>
             <div id="blog"><img src="img/link.svg" class=""></div>
-            <div id="joined"><img src="img/clock.svg" class=""></div>
+            <div id="joined"><img src="img/clock.svg" class=""> Joined on </div>
             <div class="followers-starred-following">
                 <div id="followers">Followers</div>
                 <div id="starred">Starred</div>
@@ -54,8 +54,8 @@
             </div>
         </div>
         <div class="main-container">
-            <ul class="nav nav-tabs">
-                <a class="github-button" href="https://github.com/ntkme/github-buttons" data-style="mega" aria-label="Watch ntkme/github-buttons on GitHub">Edit Profile</a>
+            <ul class="nav nav-tabs"><button class="btn nav-top-search">Search</button>
+               
                 <li>
                     <a data-toggle="tab" href="#contributions"><img src="img/diff-added.svg" class="diff added icon"> Contributions</a>
                 </li>
@@ -72,6 +72,20 @@
                     <p>You don't have any contributions yet.</p>
                 </div>
                 <div id="repositories" class="tab-pane fade in active">
+                    <div class="repo-search-tab">
+                        <input type="text" class="form-control" placeholder="Search GitHub" aria-describedby="basic-addon1">
+                        <button class="btn repo-search-tab-button-left">Search</button>
+                        <div class="repo-search-tab-links">
+                            <ul class="repo-search-tab-links-list">
+                                <li><a href="https://github.com/johncpatterson">All</a></li>
+                                <li><a href="https://github.com/johncpatterson">Public</a></li>
+                                <li><a href="https://github.com/johncpatterson">Private</a></li>
+                                <li><a href="https://github.com/johncpatterson">Sources</a></li>
+                                <li><a href="https://github.com/johncpatterson">Forks</a></li>
+                                <li><a href="https://github.com/johncpatterson">Mirrors</a></li>
+                            </ul>
+                        </div><button class="btn repo-search-tab-button-right">Search</button>
+                    </div>
                     <div id="repository-data-goes-here">
                         <!-- Append repo data here -->
                     </div>
@@ -107,13 +121,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.js"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+   
     <script src="js/main.js"></script>
 </body>
 
 </html>
-<!-- <h1>John Patterson</h1>
-<ul>
-    <li>Front End Developer</li>
-    <li><a href="http://github.com/johncpatterson">My Github</a></li>
-</ul> -->
+
